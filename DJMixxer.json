@@ -2,7 +2,7 @@
   "room":   "ĐJ Mixxer",
   "author": "CustomCss",
   "icon":   "http://i.imgur.com/jchOHYC.png",
-  "css":    "https://cdn.rawgit.com/CustomCss/Customccs/bcc251e0/DJmixxer.css",
+  "css":    "https://rawgit.com/CustomCss/Customccs/master/DJmixxer.css",
   "rules": {
     "allowAutorespond": true,
     "allowAutowoot":    true,
