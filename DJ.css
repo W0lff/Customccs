@@ -373,7 +373,7 @@ padding-left: 3px;
 text-decoration: none;
 transition: 100ms linear 50ms;
 }
-/Css badge by Wolf/
+/*Css badge by Wolf*/
 #user-lists .list .user.id-4412452 .name:after,
 #chat #chat-messages .fromID-4412452 .from .un.clickable:after,
 #chat #chat-messages .cid-4412452 .from .un.clickable:after,
@@ -383,6 +383,7 @@ transition: 100ms linear 50ms;
 #chat #chat-messages .cid-4849359 .from .un.clickable:after,
 #chat #chat-messages :not(.rsshit).id-4849359 .from .un.clickable:after {
     content: url("https://dl.dropboxusercontent.com/s/v2lts1dua12bja8/Checkgrey.png");
+    /*Credit: Wolf;*/
     top: 3px;
     Left: 3px;
     position: relative;
@@ -398,6 +399,7 @@ transition: 100ms linear 50ms;
 #chat #chat-messages .fromID-4849359 .from .un.clickable:hover:after,
 #chat #chat-messages :not(.rsshit).id-4849359 .from .un.clickable:hover:after{
     content: url("https://dl.dropboxusercontent.com/s/wppihrv7ubvr4ak/Check.png") !important;
+    /*Credit: Wolf;*/
     top: 3px;
     Left: 3px;
     position: relative;
