@@ -3,6 +3,10 @@
     width: 500% !important;
     height: 500% !important;
 }
+i.icon.icon-current-dj {
+    background-image: url("https://dl.dropboxusercontent.com/s/fzvi9h23qg069ex/music.png") !important; 
+    background-position: 1px 0px;
+}
 #footer {
 	background: linear-gradient(to bottom,rgba(0, 0, 0, 0.45) 0,rgba(0, 0, 0, 0.75) 100%);
 }
@@ -27,124 +31,91 @@
 #chat {
 	background: linear-gradient(to bottom,rgba(0, 0, 0, 0.20) 10%,rgba(0, 0, 0, 0.65) 100%);
 }
+/*#chat {
+	background: linear-gradient(to bottom,rgba(0, 0, 0, 0.20) 10%,rgba(0, 0, 0, 0.65) 100%);*/
+#chat {
+background-color: rgba(10, 10, 10, 0.75);
+}
+/*#chat .emote:nth-child(2n+1), #chat .mention:nth-child(2n+1), #chat .message:nth-child(2n+1), #chat .moderation:nth-child(2n+1), #chat .skip:nth-child(2n+1), #chat .update:nth-child(2n+1), #chat .welcome:nth-child(2n+1), #chat .user-action:nth-child(2n+1) {
+	background: linear-gradient(to bottom,rgba(0, 0, 0, 0.20) 10%,rgba(0, 0, 0, 0.65) 100%); */
+#chat .message:nth-child(2n+1),#chat .mention:nth-child(2n+1),#chat .skip:nth-child(2n+1),#chat .moderation:nth-child(2n+1),#chat .emote:nth-child(2n+1),#chat .update:nth-child(2n+1),#chat .welcome:nth-child(2n+1) {
+background-color: rgba(17, 19, 23, 0.32);
+}
 #chat .emote, #chat .mention, #chat .message, #chat .moderation, #chat .skip, #chat .system, #chat .update, #chat .welcome, #chat .user-action {
-	background: linear-gradient(to bottom,rgba(0, 0, 0, 0.20) 10%,rgba(0, 0, 0, 0.65) 100%);
+	background: linear-gradient(to bottom,rgba(0, 0, 0, 0.20) 10%,rgba(0, 0, 0, 0.65) 100%); 
 }
 #room .app-right {
 	background: linear-gradient(to left,rgba(0, 0, 0, 0.20) 10%,rgba(0, 0, 0, 0.65) 100%);
 }
 .welcome .text {
-	color:#00FFFF;
+	color:#90db20;
 }
 .group.host {
-	color:#0B950B;
+	color:#8E0000;
 }
 i.icon.icon-chat-host {
-	background : url(https://dl.dropboxusercontent.com/s/t70qvqutc7043rd/SM-Host.png?dl=0);
+	background : url(https://i.imgur.com/iyrjL4L.png);
+}
+i.icon.icon-chat-co-host {
+    background : url(https://i.imgur.com/vR1SuUH.png);
+}
+.icon-chat-host + span { color: #B40486 !important;
+}
+.icon-chat-co-host + span { color: #B40486 !important;
 }
 .group.manager {
-	color:#01D758;
+	color:#C11B17;
 }
 i.icon.icon-chat-manager {
-	background : url(https://dl.dropboxusercontent.com/s/w0b2u64yi1sa6xq/SM-Manager.png?dl=0);
+	background : url(http://i.imgur.com/ZLnbkda.png);
+}
+.icon-chat-manager + span { color: #C11B17 !important;
 }
 .group.bouncer {
-	color:#3AF24B;
+	color:#E6A21C;
 }
 i.icon.icon-chat-bouncer {
-	background : url(https://dl.dropboxusercontent.com/s/cr6oqo3gkzluej7/SM-Bouncer.png?dl=0);
+	background : url(https://i.imgur.com/CMpa3Vo.png);
+}
+.icon-chat-bouncer + span { color: #E6A21C !important; 
 }
 .group.dj {
-	color:#7DCF25;
+	color:#27A196;
 }
 i.icon.icon-chat-dj {
-	background : url(https://dl.dropboxusercontent.com/s/u6io4evqkij2gth/SM-Resdj.png?dl=0);
+	background : url(https://i.imgur.com/s06d8qb.png);
 }
-i.icon.icon-chat-subscriber {
-	background : url(http://www.dinik.cz/Subscriber1.png);
-}
-#user-rollover .meta.subscriber .status i {
-    background : url(http://www.dinik.cz/Subscriber1.png);
+.icon-chat-dj + span { color: #27A196 !important;
 }
 #user-rollover .info .level .label {
-	color:#EFEFEF;
+	color:#777F92;
 }
 #user-rollover.is-staff .info .role span {
-	color: #0EB006;
+	color: #AC76FF;
 }
 #vote {
-	box-shadow: 0 0 10px #000;
-	border-radius: 40px;
-	width: 255px !important;
+	opacity: 0.90;
 }
-#app #vote .bottom {
-	background: rgba(0,0,0,0);
+#woot { 
+	border-radius: 100px 0 0 100px ;
 }
-#woot, #grab, #meh {
-	margin-top: 0 !important;
+#woot .bottom { 
+	border-radius: 0 0 0 100px;
 }
-#vote .selected,
-#vote .selected .value {
-	font-weight: bold;
-	color: #FFF;
+#woot.selected, #woot .bottom, #woot.crowd-response.disabled.active .bottom {
+	background: linear-gradient(to top,#6FE514,rgba(74, 169, 0, 1) 100%);
 }
-.pop-menu, .pop-menu .bar {
-	border-radius: 20px 20px 0 0;
-	background: transparent;
+#meh { 
+	border-radius: 0 100px 100px 0;
 }
-.pop-menu .bar {
-	background: linear-gradient(hsla(260,50%,50%,.8), hsla(260,50%,30%,.8));
+#meh .bottom { 
+	border-radius: 0 0 100px 0;
 }
-.pop-menu .bar-divider {
-	background: linear-gradient(hsla(0,0%,90%,.8), hsla(0,0%,60%,.8));
+#meh.selected, #meh .bottom, #meh.crowd-response.disabled.active .bottom {
+	background: linear-gradient(to top,#EA2A2A,rgba(189, 0, 0, 1) 100%);
 }
-.pop-menu .menu ul {
-	background: hsla(260,10%,7%,.8);
-}
-.pop-menu .menu ul i + span {
-	font-weight: bold;
-}
-.pop-menu .menu ul li:hover {
-	background: linear-gradient(hsla(260,50%,50%,.2), hsla(260,50%,30%,.2));;
-}
-.pop-menu .menu ul .create:hover {
-	background: linear-gradient(hsl(260,40%,50%), hsl(260,40%,30%));
-}
-.pop-menu .menu::-webkit-scrollbar {
-	background: hsl(260,10%,20%) !important;
-	box-shadow: inset 0 0 10px #000;
-	width: 10px;
-}
-.pop-menu .menu::-webkit-scrollbar-thumb {
-	background: linear-gradient(to right, hsl(260,40%,60%), hsl(260,40%,40%));
-	box-shadow: inset 0 0 5px hsla(0,0%,100%,.3);
-}
-#woot {
-	border-radius: 30px 0 0 30px;
-	background: linear-gradient(to bottom,rgba(0, 0, 0, 0.45) 0,rgba(0, 0, 0, 0.75) 100%) !important;
-	box-shadow: inset 0 0 10px hsl(0,0%,40%) !important;
-}
-#woot.selected, #woot-rs .title {
-	background: linear-gradient(135deg, hsla(90,80%,50%,.3), hsla(90,80%,30%,.3)) !important;
-	box-shadow: inset 0 0 10px hsl(70,100%,40%) !important;
-}
-#grab {
-	background: linear-gradient(to bottom,rgba(0, 0, 0, 0.45) 0,rgba(0, 0, 0, 0.75) 100%) !important;
-	box-shadow: inset 0 0 10px hsl(0,0%,40%) !important;
-}
-#grab.selected, #grab-rs .title {
-	background: linear-gradient(hsla(270,70%,50%,.3), hsla(265,70%,30%,.3)) !important;
-	box-shadow: inset 0 0 10px hsl(280,100%,40%) !important;
-}
-#meh {
-	background: linear-gradient(to bottom,rgba(0, 0, 0, 0.45) 0,rgba(0, 0, 0, 0.75) 100%) !important;
-	box-shadow: inset 0 0 10px hsl(0,0%,40%) !important;
-	border-radius: 0 30px 30px 0;
-	margin-right: 0 !important;
-}
-#meh.selected, #meh-rs .title {
-	background: linear-gradient(225deg, hsla(5,80%,50%,.3), hsla(0,80%,40%,.3)) !important;
-	box-shadow: inset 0 0 10px hsl(15,100%,50%) !important;
+#grab.selected, #grab .bottom, #grab.crowd-response.disabled.active .bottom {
+	background: linear-gradient(to top,#AA74FE,rgba(102, 28, 217, 1) 100%);
 }
 #dj-button.is-wait, #dj-button.is-leave, #dj-button.is-quit, #dj-button.is-locked, #dj-button.is-full {
 	opacity: 0.85;
@@ -165,6 +136,45 @@ i.icon.icon-chat-subscriber {
 }
 #room-bar .icon-room { 
 	background: url(http://i.imgur.com/jchOHYC.png);
+
+
+/* This is for badge box (Personal) */
+}
+#chat-messages 
+.id-5445930 .badge-box i.bdg.bdg-nycset-g {background-image: url('http://i.imgur.com/fTZkHiN.gif');background-size:cover 
+}
+#chat-messages
+.id-5445930 .badge-box i.bdg.bdg-nycb05 {background-image: url('http://i.imgur.com/IU4m3W1.gif');background-size:cover
+}
+#chat-messages
+.id-5445930 .badge-box i.bdg.bdg-nycb04 {background-image: url('http://i.imgur.com/pNBLZnV.gif');background-size:cover
+}
+#chat-messages
+.id-5445930 .badge-box i.bdg.bdg-nycb03 {background-image: url('http://i.imgur.com/haMOiG5.gif');background-size:cover
+}
+#chat-messages
+.id-5445930 .badge-box i.bdg.bdg-nycb02 {background-image: url('http://i.imgur.com/8mZ5I9H.png');background-size:cover
+}
+#chat-messages
+.id-5445930 .badge-box i.bdg.bdg-nycb01 {background-image: url('http://i.imgur.com/jCWfGAn.gif');background-size:cover
+}
+#chat-messages
+.id-5445930 .badge-box i.bdg.bdg-dinerset-g {background-image: url('http://i.imgur.com/aq6E7Hl.gif');background-size:cover
+}
+#chat-messages
+.id-5445930 .badge-box i.bdg.bdg-dinerb06 {background-image: url('http://i.imgur.com/ERXsiFB.png');background-size:cover
+}
+#chat-messages
+.id-5445930 .badge-box i.bdg.bdg-dinerb05 {background-image: url('http://i.imgur.com/Ja6gfnu.png');background-size:cover
+}
+#chat-messages
+.id-5445930 .badge-box i.bdg.bdg-dinerb04 {background-image: url('http://i.imgur.com/qFVF890.gif');background-size:cover
+}
+#chat-messages
+.id-5445930 .badge-box i.bdg.bdg-dinerb03 {background-image: url('http://i.imgur.com/QEmvw4B.jpg');background-size:cover
+}
+#chat-messages
+.id-5445930 .badge-box i.bdg.bdg-dinerb02 {background-image: url('http://i.imgur.com/BcM0L1O.png');background-size:cover
 }
 .is-staff .name {
 	color: #00FFF7;
@@ -311,3 +321,112 @@ i.icon.icon-chat-subscriber {
 #dj-button.is-leave .left, #dj-button.is-quit .left {
     background: linear-gradient(to bottom,rgba(244, 107, 64, 1),rgba(244, 107, 48, 1) 100%) !important;
 }
+/* menu thing */
+#user-menu .item.selected {
+    background: rgba(0, 181, 230, 0.97);
+    cursor: default;
+    border-right: #FFFFFF 3px solid;
+}
+#user-menu .item:hover {
+background: rgba(70, 203, 239, 0.7);
+    cursor: default;
+-moz-transition: 100ms linear 50ms;
+-o-transition: 100ms linear 50ms;
+-webkit-transition: 100ms linear 50ms;
+padding-right: 3px;
+text-decoration: none;
+transition: 100ms linear 50ms;
+}
+.user-content.profile .points .value {
+	color: #196aec;
+}
+.user-content.profile .points .label {
+	color: #3d548c;
+}
+/* Waitlist */
+#waitlist .list .user {
+	background: rgba(0, 0, 0, 0.52);
+}
+#waitlist .list .user:hover {
+	background: rgba(255, 53, 88, 0.27);
+	border-left: #FFFFFF 3px solid;
+	   cursor: default;
+-moz-transition: 100ms linear 50ms;
+-o-transition: 100ms linear 50ms;
+-webkit-transition: 100ms linear 50ms;
+padding-left: 3px;
+text-decoration: none;
+transition: 100ms linear 50ms;
+}
+/* Users */
+#user-lists .list .user {
+	width: 100%;
+	background: rgba(0, 0, 0, 0.57);
+}
+#user-lists .list .user:hover {
+	background: rgba(146, 90, 255, 0.33);
+	border-left: #FFFFFF 3px solid;
+	-moz-transition: 100ms linear 50ms;
+-o-transition: 100ms linear 50ms;
+-webkit-transition: 100ms linear 50ms;
+padding-left: 3px;
+text-decoration: none;
+transition: 100ms linear 50ms;
+}
+/Css badge by Wolf/
+#user-lists .list .user.id-4412452 .name:after,
+#chat #chat-messages .fromID-4412452 .from .un.clickable:after,
+#chat #chat-messages .cid-4412452 .from .un.clickable:after,
+#chat #chat-messages :not(.rsshit).id-4412452 .from .un.clickable:after,
+#user-lists .list .user.id-4849359 .name:after,
+#chat #chat-messages .fromID-4849359 .from .un.clickable:after,
+#chat #chat-messages .cid-4849359 .from .un.clickable:after,
+#chat #chat-messages :not(.rsshit).id-4849359 .from .un.clickable:after {
+    content: url("https://dl.dropboxusercontent.com/s/v2lts1dua12bja8/Checkgrey.png");
+    top: 3px;
+    Left: 3px;
+    position: relative;
+}
+#user-rollover.id-4412452 .meta .username:after,
+#user-lists .list .user.id-4412452:hover .name:after,
+#chat #chat-messages .cid-4412452 .from .un.clickable:hover:after,
+#chat #chat-messages .fromID-4412452 .from .un.clickable:hover:after,
+#chat #chat-messages :not(.rsshit).id-4412452 .from .un.clickable:hover:after,
+#user-rollover.id-4849359 .meta .username:after,
+#user-lists .list .user.id-4849359:hover .name:after,
+#chat #chat-messages .cid-4849359 .from .un.clickable:hover:after,
+#chat #chat-messages .fromID-4849359 .from .un.clickable:hover:after,
+#chat #chat-messages :not(.rsshit).id-4849359 .from .un.clickable:hover:after{
+    content: url("https://dl.dropboxusercontent.com/s/wppihrv7ubvr4ak/Check.png") !important;
+    top: 3px;
+    Left: 3px;
+    position: relative;
+     transition: .2s linear;
+}
+#chat-messages .fromID-4412452 .from .icon,
+#chat #chat-messages .cid-4412452 .from .icon,
+#chat #chat-messages :not(.rsshit).id-4412452 .from .icon,
+#chat-messages .fromID-4849359 .from .icon,
+#chat #chat-messages .cid-4849359 .from .icon,
+#chat #chat-messages :not(.rsshit).id-4849359 .from .icon {
+    top: 3px !important;
+}
+/*app menu and communities tab*/
+#app-menu {
+    position: absolute;
+    background: rgba(40, 44, 53, 0.85);
+}
+ #app-menu .list {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.33);
+}
+
+/*friends list offline color fix*/
+.app-right .friends .list .row.is-admin.is-offline .name span {
+    color: #75AECD;	
+}
+.app-right .friends .list .row.is-ambassador.is-offline .name span {
+    color: #A3C193;
+}
+#chat .cm.id-4412452 .from .icon.icon-chat-manager {
+    background: url(https://i.imgur.com/o3KzyVA.png) -30px !important;
