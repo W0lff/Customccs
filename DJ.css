@@ -432,3 +432,55 @@ transition: 100ms linear 50ms;
 }
 #chat .cm.id-4412452 .from .icon.icon-chat-manager {
     background: url(https://i.imgur.com/o3KzyVA.png) -30px !important;
+}
+.app-right .friends .list .row .image {
+height: 19px; 
+width: 19px;
+transition: 0.2s all ease;
+    transition-delay: 0.1s;
+} 
+.app-right .friends .list .row:hover .image {
+height: 31px; 
+width: 31px;
+} 
+.app-right .friends .list .row .image .thumb {
+height: 15px; 
+width: 15px;
+transition: 0.2s all ease;
+    transition-delay: 0.1s;
+} 
+.app-right .friends .list .row:hover .image .thumb {
+height: 27px; 
+width: 27px;
+} 
+.app-right .friends .list .row .image .thumb .avi {
+opacity: 0;
+transition: 0.2s all ease;
+    transition-delay: 0.1s;
+} 
+.app-right .friends .list .row:hover .image .thumb .avi {
+opacity: 1;
+} 
+.app-right .friends .list .row {
+height: 28px; 
+transition: 0.2s all ease;
+    transition-delay: 0.1s;
+} 
+.app-right .friends .list .row:hover {
+height: 41px; 
+} 
+.app-right .friends .list .row .meta {
+margin-left: 1px;
+top: 3px; 
+height: 22px; 
+transition: 0.2s all ease;
+    transition-delay: 0.1s;
+} 
+.app-right .friends .list .row:hover .meta {
+margin-left: 6px;
+top: 11px; 
+height: 30px; 
+} 
+.app-right .friends .list .row .name {
+margin-left: 5px; 
+}
