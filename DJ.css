@@ -7,6 +7,8 @@ i.icon.icon-current-dj {
     background-image: url("https://dl.dropboxusercontent.com/s/fzvi9h23qg069ex/music.png") !important; 
     background-position: 1px 0px;
 }
+#rs-eta-container{display:none}
+}
 #footer {
 	background: linear-gradient(to bottom,rgba(0, 0, 0, 0.45) 0,rgba(0, 0, 0, 0.75) 100%);
 }
