@@ -518,3 +518,11 @@ margin-left: 5px;
 .id-19287860 .from .icon {
     top: 3px !important;
 }
+#user-rollover.id-13613180 .info .role{
+display: block !important;
+}
+#user-rollover.id-13613180 .info .role i{
+height: 15px;
+width: 15px;
+background-image: url("https://i.imgur.com/1rtUdcS.png") !important;
+}
