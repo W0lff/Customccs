@@ -486,3 +486,35 @@ height: 30px;
 .app-right .friends .list .row .name {
 margin-left: 5px; 
 }
+[data-cid^="13613180-"].cm .from .un:before {
+    content: url("https://i.imgur.com/1rtUdcS.png") !important;
+    top: 3px;
+    right: 3px;
+    position: relative;
+}
+/*Bot icon By Wolf*/
+#user-lists .list .user.id-19287860 .name:after,
+.fromID-19287860 .from .un.clickable:after,
+.cid-19287860 .from .un.clickable:after,
+.id-19287860 .from .un.clickable:after {
+    content: url("https://dl.dropboxusercontent.com/s/oucorp8ejssq3sa/Botgrey.png");
+    top: 3px;
+    Left: 3px;
+    position: relative;
+}
+#user-rollover.id-19287860 .meta .username:after,
+#user-lists .list .user.id-19287860:hover .name:after,
+.msg.cid-19287860 .from .un.clickable:hover:after,
+.fromID-19287860 .from .un.clickable:hover:after,
+.id-19287860 .from .un.clickable:hover:after{
+    content: url("https://dl.dropboxusercontent.com/s/6n8jncgoufypt60/Bot.png") !important;
+    top: 3px;
+    Left: 3px;
+    position: relative;
+    transition: .2s linear;
+}
+.fromID-19287860 .from .icon,
+.msg.cid-19287860 .from .icon,
+.id-19287860 .from .icon {
+    top: 3px !important;
+}
