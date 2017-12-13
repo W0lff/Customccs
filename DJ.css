@@ -526,3 +526,22 @@ height: 15px;
 width: 15px;
 background-image: url("https://i.imgur.com/1rtUdcS.png") !important;
 }
+#user-rollover.id-30032121 .info .role i{
+height: 15px;
+width: 15px;
+background-image: url("https://i.imgur.com/eMeduiC.png") !important;
+}
+[data-cid^="30032121-"].cm .from .un:before {
+    content: url("https://i.imgur.com/eMeduiC.png") !important;
+    top: 3px;
+    right: 3px;
+    position: relative;
+}
+.fromID-30032121 .from .icon,
+.msg.cid-19287860 .from .icon,
+.id-19287860 .from .icon {
+    top: 3px !important;
+}
+#user-rollover.id-30032121 .info .role{
+display: block !important;
+}
