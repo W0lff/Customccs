@@ -545,3 +545,68 @@ background-image: url("https://i.imgur.com/eMeduiC.png") !important;
 #user-rollover.id-30032121 .info .role{
 display: block !important;
 }
+@import url(https://fonts.googleapis.com/css?family=Inconsolata&subset=latin,latin-ext);
+
+.id-4849359>.badge-box>i.bdg,
+#chat-messages .fromID-7049112 .bdg {
+    background-image: url("https://i.imgur.com/ZID7GOB.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#user-rollover.id-4849359 .badge-box>i.bdg {
+    border-radius: 6px;
+    background-image: url("https://i.imgur.com/ZID7GOB.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#chat [data-cid^="4849359-"] span.un.clickable {
+  color: #ff8100 !important;
+  font-family: 'Inconsolata' !important;
+  font-size: 14px !important;
+}
+
+#chat .msg .text .name.id-4849359 .name,
+#chat [data-cid^="4849359-"] .timestamp,
+#chat .msg .text .id-4849359,
+#chat .msg .text .name.id-4849359 {
+  color: #ff8100 !important;
+}
+
+#chat [data-cid^="4849359-"] {
+  background: rgba(255, 128, 0, 0.15) !important;
+}
+
+#chat [data-cid^="4849359-"] .text {
+  font-family: 'Inconsolata' !important;
+  font-size: 14px !important;
+}
+
+#chat .id-4849359 .icon {
+  display: none !important;
+}
+
+#chat [data-cid^="4849359-"] .icon {
+    display: none !important;
+}
+
+/*rollover*/
+
+#user-rollover.id-4849359 .meta .p3UserID {
+  display: none !important;
+}
+
+#user-rollover.id-4849359 span.showID {
+  display: none !important;
+}
+
+#user-rollover.id-4849359 .meta .joined:after {
+  content: "\A 🅲🆂🆂  🅾🆆🅽🅴🆁" !important;
+  white-space: pre;
+  position: relative;
+  display: inline;
+  top: 2px;
+}
