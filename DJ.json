@@ -11,7 +11,7 @@
     "allowSmartVote":   true,
     "allowEmotes":      true,
     "allowShowingMehs": true,
-    "forceSmartVote":   false
+    "forceSmartVote":   true
   },
   "ccc": {
     "admin":            null,
@@ -39,7 +39,9 @@
     "subscriber":       null,
     "silversubscriber": null
   },
-  "autocomplete": [],
-  "emotes": {
-  }
+    "emotes": {
+        "kitten":   "https://i.imgur.com/Gww2Esz.png",
+        "3":        "https://i.imgur.com/N50ooqX.png",
+        "playlist": "https://i.imgur.com/e4OMtMT.png"
+    }
 }
