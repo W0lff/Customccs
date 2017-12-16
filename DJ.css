@@ -732,6 +732,44 @@ display: block !important;
 #dj-button.is-leave .left, #dj-button.is-quit .left {
     background: linear-gradient(to bottom,rgba(244, 107, 64, 1),rgba(244, 107, 48, 1) 100%) !important;
 }
+/* Icon fix :before */
+div.message > div.msg > div.from > span.un {
+    vertical-align: top;
+    horizontal-align: left;
+}
+
+/* Buttons */
+#history-button,
+#rs-skip-button {
+    background: #000000 !important;
+}
+
+#woot i.icon,
+#grab i.icon,
+#meh i.icon {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#woot i.icon {
+    background-image: url("https://i.imgur.com/JmPW3lw.png");
+}
+
+#grab i.icon {
+    background-image: url("https://i.imgur.com/U7iGW88.png");
+}
+
+#meh i.icon {
+    background-image: url("https://i.imgur.com/NPVli64.png");
+}
+#chat .welcome {
+    color: #27b2e9;
+    border-top: #27b2e9 2px dotted;
+    border-left: #27b2e9 2px dotted;
+    border-bottom: #27b2e9 2px dotted;
+    border-right: #27b2e9 2px dotted;
+}
 @import url(https://fonts.googleapis.com/css?family=Inconsolata&subset=latin,latin-ext);
 
 .id-4849359>.badge-box>i.bdg,
@@ -780,7 +818,7 @@ display: block !important;
     display: none !important;
 }
 
-/*Chillout Susan*/
+/*rollover*/
 
 #user-rollover.id-4849359 .meta .p3UserID {
   display: none !important;
