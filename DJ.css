@@ -1273,3 +1273,10 @@ div.message > div.msg > div.from > span.un {
   display: inline;
   top: 2px;
 }
+#user-rollover.id-13613180 .meta .joined:after {
+  content: "\A ♥ daughter of Panda ♥" !important;
+  white-space: pre;
+  position: relative;
+  display: inline;
+  top: 2px;
+}
