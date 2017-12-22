@@ -1283,3 +1283,704 @@ display: none;
   display: inline;
   top: 2px;
 }
+#dj-booth{
+  background: url("https://dl.dropboxusercontent.com/s/o6x49120kx9u36p/Booth.png") no-repeat;
+}
+/*chat*/
+#chat {
+    background-color: rgba(10, 10, 10, 0.75);
+}
+#chat-input{
+    border-radius: 20px;
+}
+#chat-messages .cm,
+#chat-messages .cm:nth-child(2n+1),
+#chat-messages .message,
+#chat-messages .message:nth-child(2n+1),
+#chat-messages .system,
+#chat-messages .system:nth-child(2n+1) {
+    margin-top: 1px;
+}
+#chat .message,#chat .mention,#chat .skip,#chat .moderation,#chat .emote,#chat .update,#chat .welcome {
+    background-color: rgba(0, 0, 0, 0.40);
+    -webkit-animation:fadein 0.25s;
+    -moz-animation:fadein 0.25s;
+    -ms-animation:fadein 0.25s;
+    -o-animation:fadein 0.25s;
+    animation:fadein 0.25s;
+}
+#chat .message:nth-child(2n+1),#chat .mention:nth-child(2n+1),#chat .skip:nth-child(2n+1),#chat .moderation:nth-child(2n+1),#chat .emote:nth-child(2n+1),#chat .update:nth-child(2n+1),#chat .welcome:nth-child(2n+1) {
+    background-color: rgba(17, 19, 23, 0.40);
+    -webkit-animation:fadein 0.25s;
+    -moz-animation:fadein 0.25s;
+    -ms-animation:fadein 0.25s;
+    -o-animation:fadein 0.25s;
+    animation:fadein 0.25s;
+}
+#chat .cm:nth-child(2n+1) {
+    background-color: rgba(17, 19, 23, 0.5);
+}
+/*mentions*/
+#chat .mention {
+    background: #0A0A0A !important;
+    background: -moz-linear-gradient(-45deg,#ac76ff 0,#0A0A0A 13%,#0A0A0A 100%)!important;
+    background: -webkit-gradient(left top,right bottom,color-stop(0,#ac76ff),color-stop(13%,#0A0A0A),color-stop(100%,#0A0A0A))!important;
+    background: -webkit-linear-gradient(-45deg,#ac76ff 0,rgba(10, 10, 10, 0.5) 13%,rgba(10, 10, 10, 0.49) 100%)!important;
+    background: -o-linear-gradient(-45deg,#ac76ff 0,#0A0A0A 13%,#0A0A0A 100%)!important;
+    background: -ms-linear-gradient(-45deg,#ac76ff 0,#0A0A0A 13%,#0A0A0A 100%)!important;
+    background: linear-gradient(135deg,#768dff 0,rgba(10, 10, 10, 0.5) 13%,rgba(10, 10, 10, 0.5) 100%)!important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ac76ff', endColorstr='#0A0A0A', GradientType=1 )!important;
+}
+#chat .mention:nth-child(2n+1) {
+    background: rgba(17, 19, 23, 0.24)!important;
+    background: -moz-linear-gradient(-45deg,#3760f5 0,rgba(17, 19, 23, 0.18) 13%,rgba(17, 19, 23, 0.25) 100%)!important;
+    background: -webkit-gradient-45deg,#3760f5 0,rgba(17, 19, 23, 0.18) 13%,rgba(17, 19, 23, 0.25) 100%)!important;
+    background: -webkit-linear-gradient(-45deg,#3760f5 0,rgba(17, 19, 23, 0.18) 13%,rgba(17, 19, 23, 0.25) 100%)!important;
+    background: -o-linear-gradient-45deg,#3760f5 0,rgba(17, 19, 23, 0.18) 13%,rgba(17, 19, 23, 0.25) 100%)!important;
+    background: -ms-linear-gradient-45deg,#3760f5 0,rgba(17, 19, 23, 0.18) 13%,rgba(17, 19, 23, 0.25) 100%)!important;
+    background: linear-gradient-45deg,#3760f5 0,rgba(17, 19, 23, 0.18) 13%,rgba(17, 19, 23, 0.25) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ac76ff', endColorstr='#111317', GradientType=1 )!important;
+}
+#chat .emote {
+    border-left: rgba(174, 69, 189, 1) 3px solid !important;
+    background-color: rgba(76, 93, 119, 0.22) !important;
+}
+#chat {
+    background-color: rgba(10, 10, 10, 0);
+}
+#room .app-right {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+/*hover chat*/
+#chat-messages .cm:not(.log):hover {
+	transform: translate(5px, -5px);
+	background-color: rgba(0, 20, 61, 0.50);
+}
+/*additional colors*/
+#chat-messages .cm.emote:hover {
+	background-color: rgba(174, 69, 189, 0.3) !important;
+}
+#chat-messages .cm.user-action:hover{
+	background-color: rgba(246, 255, 116, 0.1);	
+}
+#chat-messages  .cm.moderation:hover{
+    background-color: rgba(172, 118, 255, 0.1);		
+}
+/*p3 chat {can't work with this} */
+#chat-messages .message:hover{
+	transform: translate(5px, -5px);
+	background-color: rgba(0, 20, 61, 0.60);
+}
+/*P0ne chat {what is with all the long strings?} */
+#chat-messages .cm.p0ne-notif.p0ne-meh-warning{
+    border-left: rgba(196, 46, 59, 1) 3px solid !important;	
+}
+#chat-messages .cm.p0ne-notif.p0ne-meh-warning:hover {
+    background-color: rgba(196, 46, 59, 0.1);
+}
+#chat-messages .cm.p0ne-notif.p0ne-grab-notif {
+	border-left: rgba(172, 118, 255, 1) 3px solid !important;
+}
+#chat-messages .cm.p0ne-notif.p0ne-grab-notif:hover {
+    background-color: rgba(172, 118, 255, 0.1);	
+}
+#chat-messages .cm.p0ne-notif.p0ne-notif-joinleave {
+	border-left: rgba(0, 156, 221, 1) 3px solid !important;
+}
+/*extplug chat{coming soon}*/
+
+/*rcs chat*/
+#chat-messages .cm.rsshit.rs-log-green:hover, #chat-messages .cm.rsshit.rs-log-user-friend-join:hover, #chat-messages .cm.rsshit.rs-log-user-woot:hover {
+    background-color: rgba(144, 173, 47, 0.1);
+}
+#chat-messages .cm.rsshit.rs-log-purple:hover, #chat-messages .cm.rsshit.rs-log-user-grab:hover, #chat-messages .cm.rsshit.rs-log-user-staff-join:hover ,#chat-messages .cm.rsshit.rs-log-song-stats:hover {
+    background-color: rgba(172, 118, 255, 0.1);	
+}
+#chat-messages .cm.rsshit.rs-log-red:hover, #chat-messages .cm.rsshit.rs-log-user-level1-join:hover, #chat-messages .cm.rsshit.rs-log-user-meh:hover {
+    background-color: rgba(196, 46, 59, 0.1);	
+}
+#chat-messages .cm.rsshit.rs-log-orange:hover, #chat-messages .cm.rsshit.rs-log-user-leave:hover, #chat-messages .cm.rsshit.rs-log-history:hover {
+	background-color: rgba(244, 107, 64, 0.1);
+}
+#chat-messages .cm.rsshit.rs-log-usrinfo:hover, #chat-messages .cm.rsshit.rs-log-aqua:hover, #chat-messages .cm.rsshit.rs-log-booth-alert:hover, #chat-messages .cm.rsshit.rs-log-user-join:hover {
+	background-color: rgba(0, 156, 221, 0.1);
+}
+#chat-messages .cm.rsshit.rs-log-earn:hover {
+	background-color: rgba(255, 221, 111, 0.1);	
+}
+#chat-messages .cm.rsshit.rs-log-now-playing:hover {
+	background-color: rgba(87, 132, 197, 0.1);	
+}
+#chat-messages .cm.rsshit.rs-log-yellow:hover{
+	background-color: rgba(246, 255, 116, 0.1);
+}
+#chat-messages .cm.rsshit.rs-log-earn-gold:hover {
+	background-color: rgba(197, 152, 64, 0.1);
+}
+/*tastyplug :Dancecat: */
+#chat div[class*=" tp-"], #chat div[class^=tp-] {
+    background-color: rgba(10, 10, 10, 0);
+}
+#chat-messages .cm.message.tastyplug-message:hover {
+    background-color: rgba(209, 209, 25, 0.1);
+}
+/*smoothing chat*/
+#user-lists .list .user,
+#chat-messages .message,
+#chat-messages .cm{
+        -webkit-transition:     all 0.3s ease;
+        -moz-transition:        all 0.3s ease;
+        -o-transition:          all 0.3s ease;
+        transition:             all 0.3s ease;
+}
+
+
+/*list hover*/
+#user-lists .list .user:hover {
+background-color: rgba(0, 77, 255, 0.15);
+transform: translate(5px, -5px);
+width: initial;
+}
+.row:hover:not(.#user-friends) {
+    background-color: rgba(0, 77, 255, 0.10);
+    border-left: rgb(0, 77, 255) 4px solid;
+    border-right: rgb(0, 77, 255) 4px solid;
+    width: initial !important;
+    -webkit-transition: 100ms linear 50ms;
+    transition: 100ms linear 50ms
+}
+.media-list .row.selected {
+background: rgba(0, 77, 255, 0.35);
+border-left: rgb(0, 77, 255) 4px solid;
+border-right: rgb(0, 77, 255) 4px solid;
+width: initial;
+-webkit-transition: 100ms linear 50ms;
+transition: 100ms linear 50ms;
+}
+#playlist-menu .menu .row.selected {
+background: rgba(0, 77, 255, 0.35);
+border-left: rgb(0, 77, 255) 4px solid;
+border-right: rgb(0, 77, 255) 4px solid;
+width: initial;
+-webkit-transition: 100ms linear 50ms;
+transition: 100ms linear 50ms;
+}
+.media-list .row.selected.actions {
+background: rgba(0, 77, 255, 0.35);
+border-left: rgb(0, 77, 255) 4px solid;
+border-right: rgb(0, 77, 255) 4px solid;
+width: initial;
+-webkit-transition: 100ms linear 50ms;
+transition: 100ms linear 50ms;
+}
+.row.playlist-media.now-playing {
+background: rgba(0, 77, 255, 0.75);
+border-left: rgb(0, 77, 255) 4px solid;
+border-right: rgb(0, 77, 255) 4px solid;
+width: initial;
+-webkit-transition: 100ms linear 50ms;
+transition: 100ms linear 50ms;
+}
+.media-list .selected .actions,
+.media-list .actions {
+    background: rgba(0, 0, 0, 0.52) !important;
+}
+.friends .row:hover,
+#user-friends .row:hover {
+    background: rgba(0, 77, 255, 0.10)!important;
+    border-left: #FFFC21 0px solid !important;
+    border-right: #FAFF44 0px solid !important;
+    border-radius: 0px;
+    -webkit-transition: 100ms linear 50ms;
+    transition: 100ms linear 50ms
+}
+
+/*transparency*/
+#toast-notifications .notification .right:hover {
+   background: rgba(0, 0, 0, 0.35) !important;
+}
+#footer {
+   background-color: rgba(0, 0, 0, 0.50) !important;
+}
+#settings .header {
+   background-color: rgba(28, 31, 37, 0.78) !important;
+}
+#settings {
+   background-color: rgba(10, 10, 10, 0.89) !important;
+}
+#room .app-right,
+#room .app-header{
+   opacity: 0.86 !important;
+}           
+#room .header-panel-bar,
+#header-panel-bar,
+#header-panel-bar.right-meta {
+   background: 0.75;
+}
+#room .history-button,
+#history-button {
+   background-color: 0.75;
+}
+#room .plug-menu {
+   background-color: rgba(40, 44, 53, 0.94) !important;
+}
+#room .plug-menu .legal {
+   background-color: rgba(68, 74, 89, 0.46) !important;
+}
+#room .settings {
+   background-color: rgba(10, 10, 10, 0.89) !important;
+}
+#room .settings .header {
+   background-color: rgba(28, 31, 37, 0.78) !important;
+}
+#app-header .left-meta {
+   color: rgba(40, 44, 53, 0.94) !important;
+}
+#playlist-button {
+   background: rgba(0, 191, 255, 0.8) !important;
+}
+#user-lists .list.staff .group {
+   background: linear-gradient(to right,rgba(0, 0, 0, 0) 0,rgba(0, 0, 0, 1) 100%) !important;
+}
+#plug-menu {
+   background-color: rgba(40, 44, 53, 0.94) !important;
+}
+#plug-menu .legal {
+   background-color: rgba(68, 74, 89, 0.46) !important;
+}
+#user-rollover {
+   background: rgba(0, 0, 0, 0.56) !important;
+}
+#user-rollover .info{
+    background: rgba(0, 0, 0, 0.18);
+}
+#user-rollover .actions .action{
+box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.22);
+}
+.thumb .background {
+    background: rgba(40, 44, 53, 0);
+}
+#room-settings,
+#user-view {
+    background: rgba(0, 0, 0, 0.84) !important;
+}
+#room-settings-menu,
+#user-menu {
+    background: rgba(0, 0, 0, 0.13) !important;
+}
+#user-inventory .cell {
+	background: rgba(28, 31, 37, 0.59) !important;
+}
+#user-inventory .cell:hover {
+	background: rgba(28, 31, 37, 0.80) !important;
+}
+.user-content .grid .cell .top{
+    opacity: 0.6 !important;
+}
+.experience .xp .bar {
+    background: rgba(40, 44, 53, 0.46) !important;
+}
+.experience .xp .bar .progress {
+    background: rgba(0, 156, 221, 0.45) !important;
+}
+#playlist-panel {
+    background: rgba(0, 0, 0, 0.7) !important;
+}
+#playlist-menu {
+    background: rgba(0, 0, 0, 0.2)!important;
+}
+#footer-user .info {
+    background: rgba(0, 0, 0, 0.64)!important;
+}
+.back {
+    background: rgba(0, 0, 0, 0.5) !important;
+}
+.back:hover {
+    background: rgba(0, 0, 0, 0.7) !important;
+}
+#dialog-container.is-preview {
+    background: rgba(0, 0, 0, 0.68) !important;
+}
+.badge-box {
+    background: rgba(40, 44, 53, 0);
+}
+
+
+/*rounding/*/
+.dialog {
+    border-radius: 10px;
+}
+
+/*Dj Button*/
+#dj-button {
+   background-color: rgba(0, 0, 0, 0.35) !important;
+}
+#dj-button
+{
+        -webkit-transition:     all 0.3s ease;
+        -moz-transition:        all 0.3s ease;
+        -o-transition:          all 0.3s ease;
+        transition:             all 0.3s ease;
+}
+#dj-button.is-quit:hover{
+    opacity:                1;
+    -webkit-box-shadow:     inset 230px 0 0 0 rgba(244, 107, 64, 0.35) !important;
+    -moz-box-shadow:        inset 230px 0 0 0 rgba(244, 107, 64, 0.35) !important;
+    -o-box-shadow:          inset 230px 0 0 0 rgba(244, 107, 64, 0.35) !important;
+    box-shadow:             inset 230px 0 0 0 rgba(244, 107, 64, 0.35) !important;
+}
+#dj-button.is-leave:hover{
+    opacity:                1;
+    -webkit-box-shadow:     inset 230px 0 0 0 rgba(244, 107, 64, 0.35) !important;
+    -moz-box-shadow:        inset 230px 0 0 0 rgba(244, 107, 64, 0.35) !important;
+    -o-box-shadow:          inset 230px 0 0 0 rgba(244, 107, 64, 0.35) !important;
+    box-shadow:             inset 230px 0 0 0 rgba(244, 107, 64, 0.35) !important;
+}
+#dj-button.is-wait:hover{
+    opacity:                1;
+    -webkit-box-shadow:     inset 230px 0 0 0 rgba(0, 181, 230, 0.35) !important;
+    -moz-box-shadow:        inset 230px 0 0 0 rgba(0, 181, 230, 0.35) !important;
+    -o-box-shadow:          inset 230px 0 0 0 rgba(0, 181, 230, 0.35) !important;
+    box-shadow:             inset 230px 0 0 0 rgba(0, 181, 230, 0.35) !important;
+}
+#dj-button.is-locked:hover{
+    opacity:                1;
+    -webkit-box-shadow:     inset 230px 0 0 0 rgba(115, 75, 169, 0.35) !important;
+    -moz-box-shadow:        inset 230px 0 0 0 rgba(115, 75, 169, 0.35) !important;
+    -o-box-shadow:          inset 230px 0 0 0 rgba(115, 75, 169, 0.35) !important;
+    box-shadow:             inset 230px 0 0 0 rgba(115, 75, 169, 0.35) !important;
+}
+#dj-button.is-join:hover{
+    opacity:                1;
+    -webkit-box-shadow:     inset 230px 0 0 0 rgba(0, 181, 230, 0.35) !important;
+    -moz-box-shadow:        inset 230px 0 0 0 rgba(0, 181, 230, 0.35) !important;
+    -o-box-shadow:          inset 230px 0 0 0 rgba(0, 181, 230, 0.35) !important;
+    box-shadow:             inset 230px 0 0 0 rgba(0, 181, 230, 0.35) !important;
+}
+i.icon.icon-join-waitlist-big,
+i.icon.icon-current-dj-white {
+    background-image: url("https://dl.dropboxusercontent.com/s/e2qat1j9h7svd3f/Join.png") !important;
+    background-position: 1px 0px;
+}
+i.icon.icon-leave-waitlist-big,
+i.icon.icon-leave-booth-big  {
+    background-image: url("https://dl.dropboxusercontent.com/s/r9j3jll4llrbxqt/Leave.png") !important;
+    background-position: 1px 0px;
+}
+/*smooth vote*/
+#vote,
+#woot,
+#woot .top,
+#woot .bottom,
+#grab,
+#grab .top,
+#grab .bottom,
+#meh,
+#meh .top,
+#meh .bottom,
+#user-rollover .action{
+        -webkit-transition:     all 0.3s ease;
+        -moz-transition:        all 0.3s ease;
+        -o-transition:          all 0.3s ease;
+        transition:             all 0.3s ease;
+}
+#user-rollover .actions{
+		-webkit-animation:fadein 1s;
+        -moz-animation:fadein 1s;
+        -ms-animation:fadein 1s;
+        -o-animation:fadein 1s;
+        animation:fadein 1s;
+}
+/*app menu and communities tab*/
+#app-menu {
+    position: absolute;
+    background: rgba(40, 44, 53, 0.85);
+}
+ #app-menu .list {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.33);
+}
+
+/*friends list offline color fix*/
+.app-right .friends .list .row.is-admin.is-offline .name span {
+    color: #75AECD;	
+}
+.app-right .friends .list .row.is-ambassador.is-offline .name span {
+    color: #A3C193;
+}
+
+/*Rcs and p3 edits*/
+#woot-rs {
+    background: rgba(0, 156, 34, 0.35);
+    -webkit-animation:fadein 0.25s;
+    -moz-animation:fadein 0.25s;
+    -ms-animation:fadein 0.25s;
+    -o-animation:fadein 0.25s;
+    animation:fadein 0.50s;
+}
+#grab-rs {
+    background: rgba(222, 86, 255, 0.35);
+    -webkit-animation:fadein 0.25s;
+    -moz-animation:fadein 0.25s;
+    -ms-animation:fadein 0.25s;
+    -o-animation:fadein 0.25s;
+    animation:fadein 0.50s;
+}
+#meh-rs {
+    background: rgba(255, 39, 54, 0.35);
+	-webkit-animation: fadein 0.25s;
+    -moz-animation: fadein 0.25s;
+    -ms-animation: fadein 0.25s;
+    -o-animation: fadein 0.25s;
+    animation: fadein 0.50s;
+}
+#rcs-appright-button i{
+	opacity: 0;
+}
+#rcs-appright-button.selected , #rcs-appright-button:hover  {
+    background: url("https://dl.dropboxusercontent.com/s/pvf0izt28e62v4y/RCS-selected.png") !important;
+}
+#rcs-appright-button {
+    background: url("https://dl.dropboxusercontent.com/s/abc7diwvn5vjlud/RCS-Grey.png")!important;
+}
+.icon.icon-plugcubed {
+    background-image: url("https://dl.dropboxusercontent.com/s/5n4q27urt2rqa8h/p3.png") !important;
+}
+#p3-settings{
+	background-color: rgba(0, 0, 0, 0.85) !important;
+}
+#p3-settings-custom-colors .header,
+#p3-settings .header{
+    background-color: rgba(36, 44, 62, 0.46) !important;
+}
+/*extplug and p0ne edits*/
+.p0ne-settings-wrapper {
+    background: rgba(0, 0, 0, 0.5);
+}
+.p0ne-settings-item:hover {
+	background: rgba(0, 0, 0, 0.6);
+}
+.p0ne-settings-input {
+    background: rgba(0, 0, 0, 0.3);
+}
+/*yes, tastyplug too*/
+#tastyplug-ui {
+    background-color: rgba(28, 31, 37, 0);
+    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0,rgba(28, 31, 37, 0.3)),color-stop(1,rgba(40, 45, 51, 0.3)));
+    background-image: -webkit-linear-gradient(top,rgba(28, 31, 37, 0.3) 0,rgba(40, 45, 51, 0.3) 100%);
+    background-image: linear-gradient(to top,rgba(28, 31, 37, 0.3) 0,rgba(40, 45, 51, 0.3) 100%);
+}
+/*plug-it {This is a difficult one, not sure if i will edit it}*/
+
+
+/*plugin smoothing*/
+.p0ne-settings-item{
+        -webkit-transition:     all 0.3s ease;
+        -moz-transition:        all 0.3s ease;
+        -o-transition:          all 0.3s ease;
+        transition:             all 0.3s ease;
+}
+
+/*animations n stuff*/
+.back,
+#footer-user .buttons .button,
+#footer-user .buttons .store.button{
+        -webkit-transition:     all 0.3s ease;
+        -moz-transition:        all 0.3s ease;
+        -o-transition:          all 0.3s ease;
+        transition:             all 0.3s ease;
+}
+#footer-user .buttons .button:hover {
+    background: rgba(0, 0, 0, 0.31);
+}
+#footer-user .buttons .button.inventory:hover {
+    -webkit-box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, 0.25);
+    box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, 0.25);
+}
+#footer-user .buttons .button.store:hover {
+    background: rgba(0, 181, 230, 0.25);
+}
+
+/*special things ;D */
+#footer .bar-button .section .chevron:before,
+#footer .bar-button .section .chevron:after{
+    background: rgba(0, 0, 0, 0.3);
+}
+.chevron{
+	 -webkit-transition:     all 0.3s ease;
+     -moz-transition:        all 0.3s ease;
+     -o-transition:          all 0.3s ease;
+     transition:             all 0.3s ease;
+	 right: 7px;
+}
+#playlist-meta:hover .chevron{
+	 padding: 7px !important;
+	 top: 21px !important;
+}
+
+/*preview video*/
+#dialog-preview{
+    border-radius: 20px;
+}
+.dialog{
+    background: rgba(14, 13, 13, 0.4);	
+}
+.dialog-body {
+    background: rgba(14, 13, 13, 0.5));
+}
+
+/*tooltips*/
+#tooltip span {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+#tooltip .corner {
+    border-top: 10px solid rgba(85, 93, 112, 0);
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid rgba(0, 0, 0, 0.5);
+}
+#tooltip.right .corner {
+    border-top: 10px solid rgba(0, 0, 0, 0);
+    border-right: 10px solid rgba(0, 0, 0, 0.5);
+    border-left: 10px solid rgba(0, 0, 0, 0);
+}
+#tooltip.blue span {
+    background: rgba(0, 156, 221, 0.5);
+	border-radius: 5px;
+}
+#tooltip.blue .corner {
+    border-top: 10px solid rgba(0, 156, 221, 0);
+    border-left: 10px solid rgba(0, 156, 221, 0.5);
+}
+#tooltip.right.blue .corner {
+    border-top: 10px solid rgba(0, 156, 221, 0);
+    border-right: 10px solid rgba(0, 156, 221, 0.5);
+    border-left: 10px solid transparent;
+}
+#tooltip.purple span {
+    background: rgba(146, 90, 255, 0.5);
+	border-radius: 5px;
+}
+#tooltip.purple .corner {
+    border-top: 10px solid rgba(146, 90, 255, 0);
+    border-left: 10px solid rgba(146, 90, 255, 0.5);
+}
+#tooltip.right.purple .corner {
+    border-top: 10px solid rgba(146, 90, 255, 0);
+    border-right: 10px solid rgba(146, 90, 255, 0.5);
+    border-left: 10px solid transparent;
+}
+/*app things*/
+#app-menu .android-badge,
+#app-menu .iphone-badge{
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    -webkit-box-shadow: inset 0 -1px 0 0 #323742;
+    -moz-box-shadow: inset 0 -1px 0 0 #323742;
+    box-shadow: inset 0 -1px 0 0 #323742;
+    cursor: pointer;
+    background-size: 130px 40px;
+    background-position: 7px;
+    display: block !important;
+}
+/*not a good solution but it works*/
+#app-menu .iphone-badge{
+    top: 440px;
+    margin-top: 0px; 
+}
+
+#app-menu .android-badge:hover,
+#app-menu .iphone-badge:hover {
+    background-color: #1c1f25;
+    color: #eee;
+}
+#app-menu .appbadges {
+    padding-top: 0px; 
+    padding-left: 0px; 
+}
+
+
+/*Define Animation*/
+/*@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 200px 200px, -150px 150px;}
+  100% {background-position: 1000px 1000px, 400px 400px, -300px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 200px 200px, -150px 150px;}
+  100% {background-position: 1000px 1000px, 400px 400px, -300px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 200px 200px, -150px 150px;}
+  100% {background-position: 1000px 1000px, 400px 400px, -300px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 200px 200px, -150px 150px;}
+  100% {background-position: 1000px 1000px, 400px 400px, -300px 300px;}
+}	*/
+@keyframes rainbow {
+from{
+    color: #30ad2f;
+}
+
+10% {
+    color: #873aff;
+}
+20% {
+    color: #d6202f;
+}
+30% {
+    color: #fbba22;
+}
+40% {
+    color: #35e621;
+}
+50% {
+    color: #2b84f7;
+}
+60% {
+    color: #922bec;
+}
+70% {
+    color: #009cdd;
+}
+80% {
+    color: #ae2ec4;
+}
+90% {
+    color: #f93e4e;
+}
+to {
+    color: #30ad2f;
+}
+}
+@keyframes fadein {
+  from {opacity: 0;};
+  to {opacity: 1;};
+}
+
+@-moz-keyframes fadein {
+  from {opacity: 0;};
+  to {opacity: 1;};
+}
+
+@-webkit-keyframes fadein {
+  from {opacity: 0;};
+  to {opacity: 1;};
+}
+
+@-ms-keyframes fadein {
+  from {opacity: 0;};
+  to {opacity: 1;};
+}
+
+@-o-keyframes fadein {
+  from {opacity: 0;};
+  to {opacity: 1;};
+}
